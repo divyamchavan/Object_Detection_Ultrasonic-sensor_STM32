@@ -4,7 +4,9 @@ __Greetings Everyone__
 
 __Goal__: In this project I am trying to measure the distance of the object from the ultrasonic sensor and display the distance on an 16*2 Lcd using I2C communication.
 
-__Ultrasonic Sensor__ : HC-SR04 module - It can detects objects in the range 2cm to 400cm.
+__Ultrasonic Sensor__ : HC-SR04 module - It can detect objects in the range 2cm to 400cm.
+
+![US](https://github.com/divyamchavan/Object_Detection_Ultrasonic-sensor_STM32/assets/121415464/171f89cc-d1d1-476a-a253-2a12721fc69e)
 
 __Pin connections__
 
