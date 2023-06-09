@@ -4,7 +4,10 @@
 #include "ultrasonic.h"
 #include "lcd.h"
 
-
+/*
+ * PA5 - TRIGGER PIN
+ * PA6 - ECHO PIN -TIMER 3 INPUT CAPTURE MODE
+ */
 
 void Display_Distance(int);
 void Interrupt_Config();
