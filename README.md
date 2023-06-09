@@ -15,20 +15,18 @@ __Pin connections__
 |Echo|PA6|TTL Logic Output Pin. Proportional to distance|
 |GND|GND pin|
 
-__Working__
+__Working__  
 •	Echo pin is connected to GPIO port pin which is configured as input.  
-•	Trig pin is connected to GPIO port pin which is configured as output. A pulse of 10uS is sent to the trigger pin to send out 8-cycles burst of ultrasound at 40KHz and raise the echo pin.  
+•	Trig pin is connected to GPIO port pin which is configured as output. A pulse of 10uS is sent to the trigger pin to send out 8-cycles burst of ultrasound at 40KHz and raise the echo pin. 
 •	If there are any objects in the range of sensor the sound is reflected back and sensed by the sensor. This puts the echo pin to low.  
 •	The time (T) between the sending and receiving of ultrasound wave gives the time taken by the wave to travel to and forth.  
-
 •	A timer configured in input capture mode and edge triggered (both falling and rising) is used. Timer value is captured when the signal is sent(T1) and received (T2)  
-
 •	Hence, Time taken(T) = T2 – T1.  
-
 •	Distance = (T / 2) * sound velocity (340m/s). Time is halved to consider only one way travel.  
 
 
-__Timing Diagaram__
+__Timing Diagaram__ 
+
 ![US_timing](https://github.com/divyamchavan/Object_Detection_Ultrasonic-sensor_STM32/assets/121415464/3fe6febb-84ac-42e2-82d9-6cef09b44cc4)
 
  
